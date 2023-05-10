@@ -1,0 +1,33 @@
+/*My own CSS*/
+
+.imgnav {
+  max-width: 50px;
+  max-height: 37px;
+  width: auto;
+  height: auto;
+}
+
+#slayersnavitem:hover {
+  font-weight: bold;
+  color: #e3cc1bbf;
+}
+
+#hashirasnavitem:hover {
+  font-weight: bold;
+  color: #ff8c00bf;
+}
+
+#onisnavitem:hover {
+  font-weight: bold;
+  color: #8c0f1a;
+}
+
+#moonsnavitem:hover {
+  font-weight: bold;
+  color: #b700ffbf;
+}
+
+#bossesnavitem:hover {
+  font-weight: bold;
+  color: #ffffffbf;
+}
