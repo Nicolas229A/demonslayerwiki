@@ -4,11 +4,46 @@
   color: white;
 }
 
-.button {
+#idCard-body {
+  text-align: center;
+}
+
+.name {
+  font-family: "Permanent Marker", cursive;
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: #e3cc1bbf;
+}
+
+.col {
+  transition: transform 0.2s;
+}
+
+.col:hover {
+  transform: scale(1.1);
+}
+
+/*.button {
   background-color: #e3cc1bbf;
   border: none;
   color: white;
   border-radius: 12px;
   padding: 10px 27px;
   text-align: center;
+  margin-left: 115px;
 }
+
+#idButton {
+  text-decoration: none;
+}
+
+.button:hover {
+  color: white;
+  font-weight: bold;
+}
+*/
