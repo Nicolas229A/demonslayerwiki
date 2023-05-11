@@ -1,0 +1,14 @@
+.title {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  color: white;
+}
+
+.button {
+  background-color: #e3cc1bbf;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 27px;
+  text-align: center;
+}

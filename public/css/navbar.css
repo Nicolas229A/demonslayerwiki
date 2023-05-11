@@ -1,10 +1,13 @@
-/*My own CSS*/
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fira+Mono:wght@500&display=swap");
 
 .imgnav {
   max-width: 50px;
   max-height: 37px;
   width: auto;
   height: auto;
+}
+#navtitle {
+  font-family: "Permanent Marker", cursive;
 }
 
 #slayersnavitem:hover {
