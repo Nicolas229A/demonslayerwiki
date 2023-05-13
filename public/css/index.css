@@ -1,1 +1,33 @@
+/*Home Page CSS*/
 
+main {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+.welcome {
+  font-family: "Permanent Marker", cursive;
+}
+
+/*.slidePresentation {
+  width: 600px;
+}
+*/
+footer {
+  background-color: white;
+}
+#footerText {
+  color: black;
+}
+.myName {
+  font-weight: bold;
+}
+
+.goSomewhere {
+  color: rgb(235, 52, 52);
+  font-weight: bold;
+}

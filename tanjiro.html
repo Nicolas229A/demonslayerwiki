@@ -7,7 +7,7 @@
     <link
       rel="shortcut icon"
       type="imagex/png"
-      href="./public/img/tanjiro-profile-removebg.ico"
+      href="./public/img/icons/tanjiro-profile-removebg.ico"
     />
     <title>The Demon Slayer Wiki - Tanjiro</title>
     <link rel="stylesheet" href="./public/css/navbar.css"/>
@@ -20,7 +20,9 @@
     />
     <style>
       body {
-        background-image: url(./public/img/background.jpg);
+        --bs-bg-opacity: 1;
+        background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+        /*background-image: url(./public/img/backgrounds/background.jpg);*/
       }
       #navtitle, #slayersnavitem, #hashirasnavitem, #onisnavitem, #moonsnavitem, #bossesnavitem{
         color: white;
@@ -32,10 +34,10 @@
       <div class="container-fluid">
         <img
               class="imgnav"
-              src="./public/img/tanjiro-profile-removebg.png"
+              src="./public/img/icons/tanjiro-profile-removebg.png"
               alt=""
             />
-        <a class="navbar-brand" id="navtitle" href="#">The Demon Slayer Wiki</a>
+        <a class="navbar-brand" id="navtitle" href="index.html">The Demon Slayer Wiki</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -54,16 +56,26 @@
               <a class="nav-link active" id="slayersnavitem" href="slayers.html">Slayers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" id="hashirasnavitem" href="">Hashiras</a>
+              <a class="nav-link active" id="hashirasnavitem" href="hashiras.html">Hashiras</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" id="onisnavitem" href="">Onis</a>
+              <a class="nav-link active" id="onisnavitem" href="onis.html">Onis</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" id="moonsnavitem" href="">Moons</a>
+              <a class="nav-link active" id="moonsnavitem" href="moons.html">Moons</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" id="bossesnavitem" href="">Bosses</a>
+              <a class="nav-link active" id="bossesnavitem" href="bosses.html">Bosses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a id="warning" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Warning
+              </a>
+              <ul class="dropdown-menu">
+                <li><a id="dropdownItem1" class="dropdown-item">All the material used belongs to:</a></li>
+                <li><a class="dropdown-item">Koyoharu Gotoge - Story and Manga</a></li>
+                <li><a class="dropdown-item">Ufotable - Anime </a></li>
+              </ul>
             </li>
         </div>
       </div>
