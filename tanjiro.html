@@ -27,6 +27,92 @@
       #navtitle, #slayersnavitem, #hashirasnavitem, #onisnavitem, #moonsnavitem, #bossesnavitem{
         color: white;
       }
+      #familyTree {
+        transition: transform 0.2s;
+        cursor: pointer;
+      }
+
+      #familyTree:hover {
+        transform: scale(1.1);
+      }
+
+      /*W3Schools modal CSS*/
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+      }
+
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 1225px;
+      }
+
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+
+      /* Add Animation */
+      .modal-content, #caption {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+      }
+
+      @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+      }
+
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 1225px){
+        .modal-content {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -103,28 +189,39 @@
                 </div>
               </div>
               <h2 class="chapter-title">Tanjiro Kamado</h2>
+              <dl>
+                <ul>
+                  <li style="font-weight: bold; color: #e3cc1bbf;">Characteristics: </li>
+                  <li>Titles: Child of Brightness and Demon King</li>
+                  <li>Race: Human and Demon (Temporally)</li>
+                  <li>
+                    Breathing Style: <mark class="orange">Sun Breathing</mark>
+                  </li>
+                  <li>Gender: Male</li>
+                  <li>
+                    Age: 13 in the beggining of the story, 15 at the end of
+                    Urokodaki's training and 16 at the end of the story
+                  </li>
+                  <li>Height and Weight: 165 cm with 61kg</li>
+                  <li>Birthday: July 14th</li>
+                  <li>Hair color: Red</li>
+                  <li>Eye color: Red</li>
+                  <li>Affliation: Demon Slayer Corps</li>
+                  <li>Partners: Zenitsu, Inosuke and Nezuko</li>
+                </ul>
+              </dl>
               <p>
-                Appearance of the boy, who is also knowed as "Child of
-                Brightness", yes the dude himself Kanpachiro Kamaboko, I mean
-                Tanjiro...well it is in the title :
+                <span style="font-weight: bold; color: #e3cc1bbf;">Quick Story:</span> After having his family be attacked by a demon by the time he was away from his house, only his sister Nezuko survived,
+                after that Tanjiro decided to do anythung in his power to try find a cure for her, then short after getting out their house, they were attacked by one of the Hashiras from the Demon Slayer Corps, Giyu Tomioka, who tried to kill Nezuko, but after seeing the demon girl try to protect her brother, Giyu decided to send them to his old master, Sakonji Urokodaki, who trained the boy for some years in Mt.Sagiri and sent him to the Mount Fujikasane for the Final Selection where Tanjiro finally became a Demon Slayer 
               </p>
               <p>
-                Tanjiro is a young man of average height with fairly tanned skin
-                and an athletic, muscular physique. He has ruffled, black hair
-                with burgundy tips, combed back to expose his forehead, and
-                wide, dark red eyes with white pupils that appear lighter around
-                the lower section of his irises. He also has a scar on the top
-                left of his forehead, first seen when his mother brought him to
-                watch his father perform the Hinokami Kagura dance.
+                <span style="font-weight: bold; color: #e3cc1bbf;">Personality:</span> Tanjiro is a boy of a pure heart and soul, who is kind and described as having very gentle eyes and a compassionate persona, having the determination to do anything for those he loves and cares about.
               </p>
               <p>
-                The scar originally looked somewhat like a graze until his fight
-                with the Hand Demon during Final Selection, after which it
-                develops into a flame-like pattern as his Demon Slayer Mark. It
-                is noted that his hands are visibly rougher for someone his age,
-                as a result of his rigorous training under Sakonji Urokodaki.
+                <span style="font-weight: bold; color: #e3cc1bbf;">Abilities, equipment and fighting style:</span> Tanjiro is a sun breather, who has the capacity to use all the 13 forms, and also *other breathing* that were created from Sun Breathing, using a Nichirin Blade to perform the techniques, having also access to other
+                incredible "powers" such as: Demon Slayer Mark, Bright Red Nichirin Blade, Transparent World and Selfless State, but his unique abilities are the Hard Skull and Enhanced Smell.
               </p>
-              <p>
+              <!--<p>
                 Tanjiro looks remarkably similar in appearance to his ancestor
                 Sumiyoshi, possessing the same facial structure, eyes, and
                 hairstyle as him, although
@@ -132,6 +229,8 @@
                 hair was longer, about shoulder-length and would be tied in a
                 ponytail behind his head.
               </p>
+            -->
+              <!--
               <p>
                 Tanjiro first appears wearing a checkered,
                 black-and-sea-foam-green haori over a white robe and black
@@ -146,6 +245,8 @@
                 His hair is also kept tied back in small ponytail or bun; as he
                 trains with Sabito and Makomo, his hair grows to his shoulders.
               </p>
+              -->
+              <!--
               <dl>
                 <dt><strong>skeu&bull;o&bull;morph</strong></dt>
                 <dd>
@@ -168,6 +269,8 @@
                 pants. He occasionally sports a turquoise scarf and is seen with
                 circular, white bands looped around his calves.
               </p>
+            -->
+              <!--<dl>
               <ul>
                 <li>AKA: Child of Brightness, Sumiko and Demon King</li>
                 <li>Race: Human and Demon (Temporally)</li>
@@ -186,6 +289,30 @@
                 <li>Affliation: Demon Slayer Corps</li>
                 <li>Partners: Zenitsu, Inosuke and Nezuko</li>
               </ul>
+            </dl>
+          -->
+            <p style="font-weight: bold; color: #e3cc1bbf;">Family Tree: </p>
+            <br>
+            <div class="card" style="width: 18rem">
+              <img
+                src="./public/img/familyTrees/tanjiro-family tree.png"
+                class="card-img-top"
+                id="familyTree"
+              />
+              <!--<div class="card-body">
+                <p class="card-text">
+                  "It’s The Heart That Drives People So It Can Grow As Strong
+                  As You Need It To."
+                </p>
+              </div>
+            -->
+            </div>
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+            <!--
               <p>
                 Tanjiro first appears wearing a checkered,
                 black-and-sea-foam-green haori over a white robe and black
@@ -237,6 +364,7 @@
                 pants. He occasionally sports a turquoise scarf and is seen with
                 circular, white bands looped around his calves.
               </p>
+              -->
             </article>
             <footer>
               <ol id="page-numbers">
@@ -254,5 +382,28 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script>
+      /*W3Schools modal JS*/
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("familyTree");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+      </script>
   </body>
 </html>
