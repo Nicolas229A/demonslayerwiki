@@ -1,0 +1,32 @@
+/*Bosses Page CSS*/
+
+.title {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  color: white;
+}
+
+#idCard-body {
+  text-align: center;
+}
+
+.name {
+  font-family: "Permanent Marker", cursive;
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: #ffffffbf;
+  background-color: black;
+}
+
+.col {
+  transition: transform 0.2s;
+}
+
+.col:hover {
+  transform: scale(1.1);
+}
